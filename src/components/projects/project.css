@@ -1,0 +1,71 @@
+.project__container {
+    grid-template-columns: repeat(2, max-content);
+    gap: 3rem;
+    justify-content: center;
+}
+.project__card {
+    background: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+.project__img {
+    width: 360px;
+    border-radius: 1rem;
+    margin-bottom: var(--mb-1);
+    border-radius: 1rem;
+}
+.project__title {
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+.project__btn {
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+}
+.project__btn__icon {
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+.project__btn:hover .project__btn__icon {
+    transform: translateX(0.25rem);
+}
+
+/* media query */
+@media screen and (max-width: 992px) {
+    .project__container {
+        gap: 1.25rem;
+    }
+    .project__card {
+        padding: 1rem;
+    }
+    .project__img {
+        margin-bottom: 0.75rem;
+        width: 320px;
+    }
+    .project__title {
+        margin-bottom: 0.25rem;
+    }
+}
+/* for meduuim devices  */
+@media screen and (max-width: 768px) {
+    .project__container {
+        grid-template-columns: max-content;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .project__container {
+        grid-template-columns: 1fr;
+    }
+    .project__img{
+        width: 100%;
+    }
+}
+/* for small devices */
+@media screen and (max-width: 350px) {
+    
+}

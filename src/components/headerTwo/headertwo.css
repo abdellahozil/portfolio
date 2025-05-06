@@ -1,0 +1,125 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background: var(--body-color);
+}
+.nav {
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 0 20px;
+}
+.nav__logo__two,
+.nav__close,
+.theme__toggle,
+.nav__toggle__two {
+    color: var(--title-color-dark);
+    font-weight: 600;
+}
+.nav__list {
+    display: flex;
+    column-gap: 2rem;
+}
+.nav__link {
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: 500;
+    transition: .3s;
+}
+/* active link  */
+.active__link,
+.nav__link:hover {
+    color: var(--title-color-dark);
+}
+
+/* change background header  */
+.scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+.nav__menu__two {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 0px;
+    height: 100vh;
+    background: var(--body-color);
+    transition: all 1s ;
+    z-index: 10;
+}
+.show-menu {
+    width: 512px;
+}
+.nav__data__two {
+    padding: 80px 84px 0 154px;
+    margin: 80px auto;
+    width: 100%;
+}
+.nav__list__two {
+    margin-bottom: 40px;
+}
+.nav__list__two li {
+    margin-bottom: 30px;
+}
+.nav__link__two {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 1.2rem;
+    color: var(--title-color);
+    font-weight: 500;
+    transition: .3s;
+}
+.nav__link__two:hover {
+    color: var(--title-color-dark);
+}
+.nav__btns {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+.theme__toggle {
+    cursor: pointer;
+}
+.theme__toggle i {
+    font-size: 24px;
+}
+.nav__toggle__two {
+    cursor: pointer;
+    display: none;
+}
+.nav__toggle__two i {
+    font-size: 24px;
+}
+.nav__close {
+    position: relative;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: var(--title-color);
+}
+.nav__close:hover {
+    color: var(--title-color-dark);
+}
+.nav__close i {
+    font-size: 24px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        display: none;
+    }
+    .nav__toggle__two {
+        display: block;
+    }
+    .show-menu {
+        width: 312px;
+    }
+}
+
