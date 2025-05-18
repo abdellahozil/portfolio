@@ -26,7 +26,7 @@ const HeaderTwo = () => {
                         <a href="#skills" className={activNav === "#Skills" ? "nav__link active__link" : "nav__link"} onClick={() => setActivNav(("#Skills"))}>Skills</a>
                     </li>
                     <li className="nav__item">
-                        <a href="#services" className={activNav === "#services" ? "nav__link active__link" : "nav__link"} onClick={() => setActivNav(("#services"))}>Services</a>
+                        <a href="#projects" className={activNav === "#projects" ? "nav__link active__link" : "nav__link"} onClick={() => setActivNav(("#projects"))}>Projects</a>
                     </li>
                     <li className="nav__item">
                         <a href="#contact" className={activNav === "#contact" ? "nav__link active__link" : "nav__link"} onClick={() => setActivNav(("#contact"))}>Contact</a>
@@ -52,8 +52,8 @@ const HeaderTwo = () => {
                         </a>
                     </li>
                     <li className="nav__item__two">
-                        <a href="#services" className="nav__link__two">
-                            <i className="uil uil-briefcase-alt nav__icon__two"></i> Services
+                        <a href="#projects" className="nav__link__two" onClick={() => setShowMenu(!showMenu)}>
+                            <i className="uil uil-briefcase-alt nav__icon__two"></i> Projects
                         </a>
                     </li>
                     <li className="nav__item__two">
