@@ -4,7 +4,11 @@
     column-gap: 4rem;
 }
 .about__img {
-    width: 350px;
+    background-image: url(../../assets/imageeee.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 350px;
     border-radius: 1.5rem;
     justify-self: center;
 }
@@ -43,7 +47,7 @@
         row-gap: 2.5rem;
     }
     .about__img {
-        width: 220px;
+        height: 250px;
     }
     .about__box {
         padding: 0.75rem 0.5rem;

@@ -50,15 +50,15 @@
     margin-bottom: var(--mb-3);
 }
 .home__img {
-    background: url(../../assets//profile.jpg);
+    background-image: url(../../assets/imageeee.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     box-shadow: inset 0 0 0 9px rgb(225 225 255 / 30%);
     order: 1;    /* to change position of grid */
     justify-self: center;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 270px;
     animation: profile__animate 8s ease-in-out infinite 1s;
 }
 @keyframes profile__animate {
@@ -127,8 +127,7 @@
         margin-bottom: var(--mb-2-5);
     }
     .home__img {
-        width: 250px;
-        height: 250px;
+        width: 200px;
         box-shadow: inset 0 0 0 8px rgb(225 225 255 / 30%);
     }
     .home__scroll {
@@ -149,8 +148,8 @@
     }
     .home__img {
         box-shadow: inset 0 0 0 6px rgb(225 225 255 / 30%);
-        width: 200px;
-        height: 200px;
+        width: 130px;
+        height: 180px;
     }
     .home__scroll {
         display: none;
@@ -163,8 +162,8 @@
 }
 @media screen and (max-width: 356px) {
     .home__img {
-        width: 180px;
-        height: 180px;
+        width: 130px;
+        height: 170px;
     }
     .home__hand {
         width: 22px;
